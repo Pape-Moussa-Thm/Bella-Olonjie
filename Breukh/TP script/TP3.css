@@ -1,0 +1,54 @@
+.notification {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    animation: slideIn 0.5s ease;
+  }
+  
+  .notification-success {
+    background-color: green;
+    
+  }
+  
+  .notification-danger {
+    background-color: red;
+    
+  }
+  
+  .notification-warning {
+    background-color: yellow;
+   
+  }
+  
+  .notification-info {
+    background-color: blue;
+   
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-100%);
+    }
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+  function showNotification(color) {
+    const notificationContainer = document.getElementById("notification-container");
+    const notification = document.createElement("li");
+    notification.classList.add("notification", `notification-${color}`);
+    notification.textContent = `Notification ${color}`;
+    notificationContainer.appendChild(notification);
+    
+    setTimeout(() => {
+      notificationContainer.removeChild(notification);
+    }, 1000);
+  }
+  
+  
+  
+  
+  
+  
+  
