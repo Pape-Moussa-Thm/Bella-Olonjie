@@ -1,0 +1,71 @@
+/* Réinitialisation des marges et des paddings */
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: rgb(244, 244, 244);   
+}
+
+/* div de gauche */
+#leftDiv {
+    height: 15em;
+    float: left;
+    width: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    
+}
+
+/*  div de droite */
+#rightDiv {
+    height: 15em;
+    float: right;
+    width: 50%;
+    background-color: #fff;
+}
+
+/* bouton de déplacement vers la droite */
+#moveRightButton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+}
+
+/* bouton de déplacement vers la gauche */
+#moveLeftButton {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/* Mes des boutons */
+button {
+    display: flex;
+    margin: 0 auto;
+    border-radius: 10px;
+    width: 5%;
+    height: 10%;
+}
+
+/* Conteneur général */
+.container {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+        
+}

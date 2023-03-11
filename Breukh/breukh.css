@@ -1,0 +1,167 @@
+/* Debut de mon header*/
+
+/* Styles pour le header */
+/* Styles pour le header */
+.header {
+  background-color: #303030;
+  color: #fff;
+  padding: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.container li {
+  margin-right: 20px;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #f6f1f1;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li.active a {
+  color: #ffcc00;
+}
+
+/* Styles pour la section principale */
+.premier {
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  height: 50%;
+  position: relative;
+}
+.img{
+  width: 33%;
+  border: 2px solid;
+  
+}
+.menu{
+display: none;
+position: absolute;
+top: 0;
+background-color: #f2405eb9;
+color: #fff;
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+clip-path: polygon(0% 0%,100% 0,88 0, 22% 100%, 0% 100%);
+
+}
+img{
+  width: 100%;
+}
+
+/* Styles pour la barre de section info-produit */
+.new-products {
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+.new-products h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.new-products ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.new-products ul li {
+  margin-right: 20px;
+}
+
+.new-products ul li a {
+  color: #f4ebeb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Styles pour les cartes produit */
+.cards {
+  display: flex;
+  display: inline-block;
+  width: 15%;
+}
+
+.card {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  flex-basis: 23%;
+}
+
+.card img {
+  width: 100%; /* Redimensionnement des images des cartes produits */
+  height: auto; /* Hauteur automatique pour préserver les proportions */
+}
+
+.category {
+  margin: 0;
+  font-size: 12px;
+  color: #999;
+  text-transform: uppercase;
+}
+
+.title {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.price {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+/* Ajout d'un lien dans la barre de navigation New Products */
+nav ul li.new-products-link a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li.new-products-link.active a {
+  color: #ffcc00;
+}

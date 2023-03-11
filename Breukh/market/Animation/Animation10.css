@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+ 
+}
+
+#bouton13 {
+  display: block;
+  width: 220px;
+  height: 80px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #00b7ff;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  line-height: 80px;
+  transition: all 0.5s;
+  border: 1px solid ;
+  border-radius: 10px;
+}
+
+#bouton13::before,
+#bouton13::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #00b7ff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: all 0.3s;
+  z-index: -1;
+  opacity: 0;
+}
+
+#bouton13::before {
+  left: 0;
+  box-shadow: -100px 0 0 #00b7ff;
+}
+
+#bouton13::after {
+  right: 0;
+  box-shadow: 100px 0 0 #00b7ff;
+}
+
+#bouton13:hover::before {
+  left: 50%;
+  box-shadow: 30px 0 0 #00b7ff;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+
+#bouton13:hover::after {
+  right: 50%;
+  box-shadow: -30px 0 0 #00b7ff;
+  transform: translate(50%, -50%);
+  opacity: 1;
+}
+
+#bouton13 span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00b7ff;
+  border-radius: 5px;
+  transform: scale(0);
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+#bouton13:hover span {
+  transform: scale(1);
+  transition-delay: 0.3s;
+}
+
+#bouton13:hover {
+  color: white;
+}
